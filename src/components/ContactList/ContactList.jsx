@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Button, Icon, ListItem } from "./ContactList.styled";
 import { useDispatch, useSelector } from "react-redux";
-import { getContacts, getFilterValue } from "redux/selectors";
-import { fetchContacts, deleteContact } from '../../redux/contactsOperation';
+import { getContacts, getFilterValue } from "redux/contacts/selectors";
+import { fetchContacts, deleteContact } from '../../redux/contacts/contactsOperation';
 import { useEffect } from "react";
 
 const ContactList = () => {
